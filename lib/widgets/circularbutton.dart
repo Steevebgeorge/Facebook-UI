@@ -1,15 +1,15 @@
-// ignore_for_file: file_names
-
 import 'package:flutter/material.dart';
 
-class AppBarButton extends StatelessWidget {
+class Circularbutton extends StatelessWidget {
   final IconData buttonicon;
   final void Function() buttonAction;
+  final Color buttonColor;
 
-  const AppBarButton({
+  const Circularbutton({
     super.key,
     required this.buttonicon,
     required this.buttonAction,
+    this.buttonColor = Colors.black,
   });
 
   @override
@@ -19,13 +19,13 @@ class AppBarButton extends StatelessWidget {
       margin: const EdgeInsets.all(5),
       padding: const EdgeInsets.all(1),
       decoration: BoxDecoration(
-        color: Colors.grey[400],
+        color: Colors.grey[300],
         shape: BoxShape.circle,
       ),
       child: IconButton(
           icon: Icon(
             buttonicon,
-            color: Colors.black,
+            color: buttonColor,
             size: 20,
           ),
           onPressed: buttonAction),
