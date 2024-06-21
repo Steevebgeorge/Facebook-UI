@@ -23,3 +23,11 @@ String arrahmanStory = "assets/stories/arrahman.jpg";
 String bachanStory = "assets/stories/bachan.jpg";
 String kalyaniStory = "assets/stories/kalyani.jpg";
 String pranavStory = "assets/stories/pranav.jpg";
+
+//friendrequests
+String mammotty = "assets/friends/mammotty.jpg";
+String aju = "assets/friends/aju.jpg";
+String neslan = "assets/friends/neslan.jpg";
+String nivinpauly = "assets/friends/nivinpauly.jpg";
+String surya = "assets/friends/surya.jpg";
+String tovino = "assets/friends/tovino.jpg";

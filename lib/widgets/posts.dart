@@ -32,7 +32,7 @@ class PostCard extends StatelessWidget {
     return Container(
       child: Column(
         children: [
-          const Padding(padding: EdgeInsets.only(top: 10)),
+          const Padding(padding: EdgeInsets.only(top: 3)),
           postHeaderSection(),
           postTitlefn(),
           postImage(),
@@ -76,7 +76,7 @@ class PostCard extends StatelessWidget {
       height: 40,
       padding: const EdgeInsets.only(left: 10, right: 10),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        // mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
             children: [
@@ -102,7 +102,13 @@ class PostCard extends StatelessWidget {
               )
             ],
           ),
+          const SizedBox(
+            width: 80,
+          ),
           Text("$postCommentCount comments"),
+          const SizedBox(
+            width: 50,
+          ),
           Text("$postShareCount shares"),
           IconButton(
             onPressed: () {
@@ -124,7 +130,6 @@ class PostCard extends StatelessWidget {
 
   Widget postTitlefn() {
     return Container(
-      padding: const EdgeInsets.only(bottom: 5),
       child: Text(
         postTitle,
         style: const TextStyle(fontSize: 16),

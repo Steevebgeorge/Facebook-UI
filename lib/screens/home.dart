@@ -1,6 +1,7 @@
 // ignore_for_file: avoid_print
 
 import 'package:facebook/assets.dart';
+import 'package:facebook/sections/addfriends.dart';
 import 'package:facebook/sections/buttonssection.dart';
 import 'package:facebook/sections/roomsection.dart';
 import 'package:facebook/sections/statussection.dart';
@@ -79,17 +80,17 @@ class MyHomePage extends StatelessWidget {
                 buttonIconColor: Colors.purple),
           ),
           Divider(
-            thickness: 15,
+            thickness: 10,
             color: Colors.grey[300],
           ),
           const RoomSection(),
           Divider(
-            thickness: 15,
+            thickness: 10,
             color: Colors.grey[300],
           ),
           const StorySection(),
           Divider(
-            thickness: 15,
+            thickness: 10,
             color: Colors.grey[300],
           ),
           PostCard(
@@ -104,7 +105,7 @@ class MyHomePage extends StatelessWidget {
             postShareCount: "700",
           ),
           Divider(
-            thickness: 15,
+            thickness: 8,
             color: Colors.grey[300],
           ),
           PostCard(
@@ -118,6 +119,15 @@ class MyHomePage extends StatelessWidget {
             postCommentCount: "500",
             postShareCount: "100",
           ),
+          Divider(
+            thickness: 8,
+            color: Colors.grey[300],
+          ),
+          const FriendSuggestionsContainer(),
+          Divider(
+            thickness: 8,
+            color: Colors.grey[300],
+          ),
           PostCard(
               postAvatarName: pranav,
               postedPersonName: "Pranav Mohanlal",
@@ -128,6 +138,10 @@ class MyHomePage extends StatelessWidget {
               postLikeCount: "2k",
               postCommentCount: "1k",
               postShareCount: "20"),
+          Divider(
+            thickness: 8,
+            color: Colors.grey[300],
+          ),
           PostCard(
             postAvatarName: prithviraj,
             postedPersonName: "PrithviRaj Sukumaran",
@@ -138,6 +152,10 @@ class MyHomePage extends StatelessWidget {
             postCommentCount: "5k",
             postShareCount: "800",
             postedTime: "24h",
+          ),
+          Divider(
+            thickness: 8,
+            color: Colors.grey[300],
           ),
           PostCard(
             postAvatarName: arrahman,

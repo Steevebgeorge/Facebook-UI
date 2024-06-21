@@ -22,7 +22,7 @@ class Avatar extends StatelessWidget {
                 ? Border.all(color: Colors.blueAccent, width: 3)
                 : const Border(),
           ),
-          padding: const EdgeInsets.only(left: 5, right: 5),
+          padding: const EdgeInsets.only(right: 5),
           child: ClipRRect(
             borderRadius: BorderRadius.circular(110),
             child: Image.asset(
